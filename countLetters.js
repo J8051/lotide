@@ -1,8 +1,6 @@
 
 const countLetters = function(stringPhrase){
-  result={
-
-  };
+  result={};
     for(const letters of stringPhrase){
       if(result[letters]){
         result[letters]+=1;
@@ -15,5 +13,5 @@ const countLetters = function(stringPhrase){
 };
 
 console.log(countLetters("LHL")); 
-
+console.log(countLetters("LighthouseLabs"));
 
