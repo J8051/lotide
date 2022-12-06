@@ -3,6 +3,7 @@ const head = require("../head");
 const tail = require("../tail"); 
 const eqArrays = require("../eqArrays"); 
 const assertArrayEquals = require("../assertArrayEqual"); 
+const middle = require("../middle"); 
 
 // TEST CODE AssertEqual 
 assertEqual("Bootcamp", "Bootcamp");
@@ -32,3 +33,11 @@ console.log(assertArrayEquals([1, 2, 3], [3, 2, 1]));
 console.log(assertArrayEquals(["1", "2", "3"], ["1", "2", "3"])); 
 console.log(assertArrayEquals(["1", "2", "3"], ["1", "2", 3])); 
 console.log(assertArrayEquals([1, 2, 3], [1, 2, 3]));
+
+//Test Code Middle
+console.log(assertArrayEquals(middle([1]), [])); 
+console.log(assertArrayEquals(middle([1, 2]) , [])); 
+console.log(assertArrayEquals(middle([1, 2, 3]), [2])); 
+console.log(assertArrayEquals(middle([1, 2, 3, 4, 5]) ,[3]));
+console.log(assertArrayEquals(middle([1, 2, 3, 4]), [2,3])); 
+console.log(assertArrayEquals(middle([1, 2, 3, 4, 5, 6]), [3,4])); 
