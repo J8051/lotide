@@ -1,3 +1,4 @@
+let assertEqual = require("./assertEqual"); 
 
 const eqArrays = function(arrOne,arrTwo){
 let lengthArrOne = arrOne.length; 
@@ -12,10 +13,8 @@ let lengthArrTwo = arrTwo.length;
     }
       }
 return true; 
-  };
+};
 
+module.exports = eqArrays; 
 
-console.log(eqArrays([1, 2, 3], [3, 2, 1])); 
-console.log(eqArrays([1, 2, 3], [1, 2, 3])); 
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); 
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));  
+ 
