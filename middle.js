@@ -1,16 +1,14 @@
-// TEST/ASSERTION FUNCTIONS
-const eqArrays = function(arrOne,arrTwo){
-  return arrOne.toString() === arrTwo.toString(); 
-};
+const assertArrayEquals = require("./assertArrayEqual"); 
+const eqArrays = require("./eqArrays"); 
 
-const assertEqual = function(actual, expected) {
-  actual === expected ? console.log(`✅Assertion Passed: ${actual} === ${expected}`) : console.log(`❌Assertion Failed: ${actual} !== ${expected} `)
-};
 // ACTUAL FUNCTION
 const middle = function(arr){
   let lastIndex = arr.length-1; 
   let median;
-  let result =[];   
+  let result = [];  
+  if (arr.length <= 2) {
+    return [];
+  } else { 
     for(let i =0;i<arr.length;i++){
       if(arr.length%2===0){
         median = Math.floor((arr[0] + arr[lastIndex])/2); 
@@ -22,6 +20,15 @@ const middle = function(arr){
           return result;
         }
     }
-
+  }
 };
-console.log(middle([1, 2, 3, 4, 5, 6, 7,8])); 
+
+module.exports = middle; 
+console.log(middle([1, 2, 3, 4, 5, 6, 7, 8])); 
+
+
+
+
+
+
+
