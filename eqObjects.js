@@ -19,9 +19,11 @@ const eqObjects = function(object1, object2) {
     if(object1Length !== object2Length){
       return false; 
     }else{
-      let objOneKeyArray= Object.keys(object1);    
-      for(let key of objOneKeyArray){
-        if(Array.isArray(object1[key]) && Array.isArray(object2[key])){
+      let objOneKeyArray= Object.keys(object1);
+      for(let key of objOneKeyArray){ 
+        console.log(object1[key]);
+        console.log(object2[key]); 
+        if(Array.isArray(object1[key]) && Array.isArray(object2[key])){ 
           if(!eqArrays(object1[key],object2[key])){
             return false
           }
@@ -31,7 +33,7 @@ const eqObjects = function(object1, object2) {
           }
         }
       
-      }
+   }
 
   };
   return true;
@@ -40,12 +42,14 @@ const eqObjects = function(object1, object2) {
   const assertEqual = function(actual, expected) {
     actual === expected ? console.log(`✅Assertion Passed: ${actual} === ${expected}`) : console.log(`❌Assertion Failed: ${actual} !== ${expected} `)
   };
-  const cd = { c: "1", d: ["2", 3] };
-  const dc = { d: ["2", 3], c: "1" };
-  //eqObjects(cd, dc); // => true
+  const cd = { a:"hi",c: "1", d: ["2", 3] };
+  const dc = { d: ["2", 3], c: "1", z:"ih" };
+  eqObjects(cd, dc);
   
   const cd2 = { c: "1", d: ["2", 3, 4] };
-  assertEqual(eqObjects(cd, dc),true);
-  assertEqual(eqObjects(cd, cd2),false);
+  //assertEqual(eqObjects(cd, dc),true);
+  //assertEqual(eqObjects(cd, cd2),false);
+
+module.exports = eqObjects; 
  
   

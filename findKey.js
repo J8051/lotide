@@ -23,4 +23,6 @@ const assertEqual = function (actual, expected) {
 };
 
 // // TEST CODE
-assertEqual(result,"noma");
+assertEqual(result, "noma");
+
+module.exports = findKey; 

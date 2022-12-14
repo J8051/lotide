@@ -14,4 +14,5 @@ const countLetters = function(stringPhrase){
 
 console.log(countLetters("LHL")); 
 console.log(countLetters("LighthouseLabs"));
+module.exports = countLetters; 
 

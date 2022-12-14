@@ -30,9 +30,7 @@ const eqObjects = function(object1, object2) {
             return false;
           }
         }
-      
    }
-
   };
     return true;
   }; 
@@ -50,5 +48,7 @@ const eqObjects = function(object1, object2) {
       }
   }; 
   assertObjectEquals(cd,dc);
-  assertObjectEquals(cd2,dc);
+assertObjectEquals(cd2, dc);
+  
+module.exports = assertObjectEquals;
   

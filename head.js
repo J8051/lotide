@@ -1,5 +1,4 @@
 const assertEqual = require("./assertEqual");
-
 const head = function (arr) {
   let firstElement;
   if (arr.length < 1) {
@@ -12,6 +11,5 @@ const head = function (arr) {
   }
   return firstElement;
 };
-
 module.exports = head; 
 

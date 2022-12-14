@@ -52,4 +52,6 @@ const assertArrayEquals = function(arrOne,arrTwo){
   //console.log(assertArrayEquals(results1,[ 'g', 'c', 't', 'm', 't' ]));
   //console.log(assertArrayEquals(results2,[ 10, 20, 30, 40, 50, 60 ])); 
   //console.log(assertArrayEquals(results3,[ 'dogs', 'cats', 'birds', 'snakes', 'rabbits', 'cows' ]));
-  console.log(assertArrayEquals(results4,[ 'cat', 'hat', 'rat', 'bat', 'mat', 'sat' ]));
+console.log(assertArrayEquals(results4, ['cat', 'hat', 'rat', 'bat', 'mat', 'sat']));
+  
+module.exports = map; 
