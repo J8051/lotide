@@ -30,7 +30,7 @@ The following functions are currently implemented:
 * `tail`: returns every element in an array except the first one.
 * `middle`: returns the middle elements of an array.
 * `assertArrayEqual`: compares arrays for an exact match then logs a message to the console with the results
-* `assertEqual`: a manual test to compare expected vs actual results . 
+* `assertEqual`: a manual test to compare expected vs actual results. 
 * `assertObjectEqual`: comapres objects for an exact match and logs the results to the console.
 * `countLetters`: a function that counts the number of times each letter appears in a string.
 * `countOnly`: a function that can count selected string items from a list. 
