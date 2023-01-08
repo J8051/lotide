@@ -10,9 +10,13 @@ const countOnly = function(allItems, itemsToCount) {
       } 
     }  
   }
-  console.log(results); 
 return results;
 };
+
+// Exports 
+module.exports = countOnly; 
+
+//Testing data : 
 
 // Function data (The list)
 const firstNames = [
@@ -41,5 +45,3 @@ assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
 
-// Exports 
-module.exports = countOnly; 

@@ -1,6 +1,3 @@
-const assertArrayEquals = require("./assertArrayEqual");
-const eqArrays = require("./eqArrays");
-
 // Returns the middle elements of an array.
 const middle = function(arr) {
   let lastIndex = arr.length - 1;
@@ -22,13 +19,6 @@ const middle = function(arr) {
     }
   }
 };
-//Function calls 
-console.log(middle([1, 2, 3, 4, 5, 6, 7, 8]));
+
 //Exports
 module.exports = middle;
-
-
-
-
-
-

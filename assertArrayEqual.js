@@ -1,6 +1,6 @@
 const eqArrays = require("./eqArrays");
 
-// A function to compare arrays for an exact
+// A function to compare arrays for an exact match
 const assertArrayEquals = function(arrOne, arrTwo) {
   if (eqArrays(arrOne, arrTwo)) {
     console.log(`✅Assertion Passed ${arrOne} is the same as ${arrTwo}`);
@@ -9,6 +9,6 @@ const assertArrayEquals = function(arrOne, arrTwo) {
   }
 
 };
-
+//Export 
 module.exports = assertArrayEquals;
 

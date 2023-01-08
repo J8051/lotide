@@ -1,17 +1,23 @@
+// This function will return an array based on the results of the callback
+const map = function(array, callback) {
+  const results = [];
+  for (let elem of array) {
+    results.push(callback(elem));
+  }
+  return results;
+};
+
+//Exports 
+module.exports = map; 
+
+// Testing Code 
+
 // data given 
 // const words = ["ground", "control", "to", "major", "tom"];
 // const earningsInDollars =[5,10,15,20,25,30];
 //const singularAnimal = ["dog","cat","bird","snake","rabbit","cow"];
 const letters = ["c", "h", "r", "b", "m", "s"];
 
-const map = function(array, callback) {
-  // this function will return an array based on the results of the callback
-  const results = [];
-  for (let elem of letters) {
-    results.push(callback(elem));
-  }
-  return results;
-};
 //map changed full word to first letter
 //const results1 = map(words, word => word[0]);
 //map doubled our earnings  
@@ -54,5 +60,3 @@ const assertArrayEquals = function(arrOne, arrTwo) {
 //console.log(assertArrayEquals(results3,[ 'dogs', 'cats', 'birds', 'snakes', 'rabbits', 'cows' ]));
 console.log(assertArrayEquals(results4, ['cat', 'hat', 'rat', 'bat', 'mat', 'sat']));
 
-//Exports 
-module.exports = map; 

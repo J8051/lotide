@@ -1,18 +1,4 @@
-//A function that comapres arrays used as a reference to create the function below 
-const eqArrays = function(arrOne, arrTwo) {
-  let lengthArrOne = arrOne.length;
-  let lengthArrTwo = arrTwo.length;
-  if (lengthArrOne !== lengthArrTwo) {
-    return false;
-  } else {
-    for (let i = 0; i < arrOne.length; i++) {
-      if (arrOne[i] !== arrTwo[i]) {
-        return false;
-      }
-    }
-  }
-  return true;
-};
+const eqArrays = require("./eqArrays");
 
 //A function that comapres objects and returns true or false based on an exact match.
 const eqObjects = function(object1, object2) {
@@ -41,6 +27,11 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+// Exports
+module.exports = eqObjects;
+
+//Testing data:
+
 //Manual test used for arrays
 const assertEqual = function(actual, expected) {
   actual === expected ? console.log(`✅Assertion Passed: ${actual} === ${expected}`) : console.log(`❌Assertion Failed: ${actual} !== ${expected} `);
@@ -52,10 +43,8 @@ const dc = { d: ["2", 3], c: "1", z: "ih" };
 eqObjects(cd, dc);
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
-//assertEqual(eqObjects(cd, dc),true);
-//assertEqual(eqObjects(cd, cd2),false);
+assertEqual(eqObjects(cd, dc),true);
+assertEqual(eqObjects(cd, cd2),false);
 
-// Exports
-module.exports = eqObjects;
 
 

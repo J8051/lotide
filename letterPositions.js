@@ -11,6 +11,11 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+//Exports 
+module.exports = letterPositions;
+
+//Testing Code : 
+
 //Function call 
 console.log(letterPositions("hello"));
 
@@ -25,5 +30,3 @@ const assertArrayEquals = function(arrOne, arrTwo) {
 // Using the test above on the function 
 assertArraysEqual(letterPositions("hello").e, [1]);
 
-//Exports 
-module.exports = letterPositions;

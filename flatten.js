@@ -11,9 +11,13 @@ const flatten = function(nestedArray) {
   }
   return flatArr;
 };
+
+//Exports 
+module.exports = flatten; 
+
+// Testing Code:  
+
 // Function calls 
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
 console.log(flatten([1, [2, 3], 4, [5, 6]]));
-//Exports 
-module.exports = flatten; 

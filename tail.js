@@ -1,4 +1,3 @@
-const assertEqual = require("./assertEqual");
 // This function returns all but the first element in an array. 
 const tail = function(arr) {
   let newArr = [];
@@ -9,6 +8,6 @@ const tail = function(arr) {
   }
   return newArr;
 };
-console.log(tail(["Hello", "Lighthouse", "Labs"]));
 
+//Exports
 module.exports = tail; 

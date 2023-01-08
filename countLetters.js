@@ -12,10 +12,9 @@ const countLetters = function(stringPhrase) {
   return result;
 };
 
-//Function Calls  
-console.log(countLetters("LHL"));
-console.log(countLetters("LighthouseLabs"));
-
 //Exports 
 module.exports = countLetters;
 
+//Function Calls  
+console.log(countLetters("LHL"));
+console.log(countLetters("LighthouseLabs"));

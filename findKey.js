@@ -8,6 +8,11 @@ const findKey = function(obj, callback) {
   }
 };
 
+//Exports 
+module.exports = findKey; 
+
+//Testing code: 
+
 // Storing function call in a variable  
 let result = findKey({
   "Blue Hill": { stars: 1 },
@@ -23,7 +28,7 @@ console.log(result);
 const assertEqual = function(actual, expected) {
   actual === expected ? console.log(`✅Assertion Passed: ${actual} === ${expected}`) : console.log(`❌Assertion Failed: ${actual} !== ${expected} `);
 };
+
 // // TEST CODE
 assertEqual(result, "noma");
-//Exports 
-module.exports = findKey; 
+
